@@ -43,7 +43,7 @@
         var map = L.map('map', {
             zoomControl:false, maxZoom:28, minZoom:1
         }).fitBounds([[-3.706981776949009,-40.40114455185799],[-3.6426578849689455,-40.27755444251497]]);
-			fetch('http://localhost:7800/collections/Dados_Variados.BAIRROSDASEDE/items.json')
+			fetch('http://localhost:7800/collections/Dados%20Variados.BAIRROSDASEDE/items.json')
 .then(response => response.json())
 .then(data => {
 L.geoJSON(data).addTo(map);
